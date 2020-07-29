@@ -1,8 +1,10 @@
 #include <stdio.h>
 
+//该函数接收数组及其长度，返回数组最大元素下标
 int arrMaxIndex(int *p, int arrLength)
 {
 	int i, tempNum = 0, maxIndex = 0;
+	//获取最大数下标
 	for(i = 0; i < arrLength; i++)
 	{
 		if(tempNum < *(p+i))

@@ -2,6 +2,7 @@
 
 int main()
 {
+	//打印9 9乘法表
 	int i, j;
 	for(i = 1; i < 10; i++)
 	{

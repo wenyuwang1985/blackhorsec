@@ -4,6 +4,7 @@
 
 int main()
 {
+	//输入数字判断是否与随机数相等
 	srand((unsigned int)time(0));
 	int x, y;
 	x = rand()%100 + 1;
@@ -11,14 +12,17 @@ int main()
 	do{
 		printf("请输入：");
 		scanf("%d", &y);
+		//若输入数字小于随机数，输出small，并重新输入
 		if(x > y)
 		{
 			printf("small\n");
 		}
+		//若输入数字大于随机数，输出big，并重新输入
 		else if(x < y)
 		{
 			printf("big\n");
 		}
+		//等于，输出猜对，程序结束
 		else
 		{
 			printf("guess current\n");
